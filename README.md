@@ -1,28 +1,25 @@
-# Mudah.my
+# Car Listings Data Scraper & Processor
 
-**Project Overview**
-This project analyzes car listings from Mudah.my, one of Malaysia’s largest online marketplaces. The dataset contains information such as car prices, manufacturing years, conditions (new, used, recon), mileage, engine capacities, and regions where the cars are listed. The goal is to gain insights into the pricing trends, distribution of vehicle conditions, and how various factors influence car prices.
+**Project Overview**  
+This project focuses on **scraping, cleaning, and processing car listings data from Mudah.my** to facilitate analysis and insights into the Malaysian used car market. Using **web scraping, data transformation, and outlier detection techniques**, the project extracts key attributes from car advertisements, processes the raw data, and prepares it for further analysis or machine learning applications.  
 
-**Objectives**
-- Explore price distribution – Understand how car prices are spread across different categories.
-- Analyze car conditions – Identify how many cars are new, used, or recon.
-- Compare price variations – Investigate how prices change based on manufacturing year, engine capacity, and region.
-- Identify correlations – Find relationships between numerical variables such as price, engine capacity, and manufacturing year.
+**Objectives**  
+1. **Scrape car listing data** from multiple pages of Mudah.my using `requests` and `BeautifulSoup`.  
+2. **Extract key attributes**, including product name, manufacturing year, price, condition, region, mileage, and engine capacity.  
+3. **Clean and standardize the data**, handling missing values, formatting numerical values, and refining product names.  
+4. **Detect and remove outliers** in price and engine capacity using the **Interquartile Range (IQR) method**.  
+5. **Store the processed data** in a structured format (`CSV`) for further analysis or machine learning applications.  
 
-**Key Data Visualizations**
-- Distribution of Car Prices – Histogram and KDE plot to show the spread of car prices.
-- Price vs. Manufacturing Year – Scatter plot to observe price trends over different years.
-- Price vs. Engine Capacity – Relationship between engine size and pricing.
-- Count of Cars by Condition – Bar chart showing how many cars fall into each condition category.
-- Count of Cars by Region – Distribution of car listings by location.
-- Average Price by Condition – Bar plot comparing the average price of new, used, and recon cars.
-- Price Distribution by Region – Box plot to visualize price variation across different locations.
-- Correlation Heatmap – Identifying relationships between key numerical variables.
+**Technologies & Tools Used**  
+- **Python** for data extraction, processing, and transformation  
+- **Libraries**:  
+  - `requests` & `BeautifulSoup` – for web scraping  
+  - `pandas` – for data manipulation  
+  - `re` – for text processing 
 
-**Expected Insights**
-- How different factors (year, condition, region) impact car prices.
-- Which car conditions dominate the marketplace.
-- Regional differences in car listings and pricing.
-- Trends in engine capacity vs. car prices.
+**Potential Applications**  
+- **Market Trend Analysis**: Understanding price distributions and regional variations in car listings.  
+- **Price Prediction Models**: Training machine learning models to estimate car prices based on features.  
+- **Car Popularity Insights**: Identifying commonly listed models and their demand in the market.  
 
-This analysis provides useful insights for buyers, sellers, and automotive enthusiasts looking to understand market trends in the Malaysian used car industry.
+This project serves as a foundation for **further data analysis, visualization, and predictive modeling in the automotive industry**. 🚗📊
